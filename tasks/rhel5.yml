@@ -1,0 +1,2 @@
+- name: Define login definitions for RHEL5
+  template: src=login_defs_rhel5.j2 dest=/etc/login.defs mode=0644
