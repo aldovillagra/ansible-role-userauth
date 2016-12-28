@@ -1,9 +1,13 @@
 ---
 # defaults file for userauth
 mail_dir: "/var/spool/mail"
+# Maximum number of days a password may be used.
 pass_max_days: 99999
+# Minimum number of days allowed between password changes.
 pass_min_days: 0
-pass_min_len: 5
+# Minimum acceptable password length.
+pass_min_len: 8
+# Number of days warning given before a password expires.
 pass_warn_age: 7
 uid_min: 500
 uid_max: 60000
@@ -14,3 +18,15 @@ umask: "077"
 usergroups_enab: "yes"
 md5_crypt_enab: "no"
 encrypt_method: "SHA512"
+# Force Capital Characters In Passwords - ucredit
+complex_pass_capital: 0
+# Force Lower Case Characters In Passwords - lcredit
+complex_pass_lower: 0
+# Force Numbers In Passwords - dcredit
+complex_pass_number: 0
+# Force The Use Of Symbols In Passwords - ocredit
+complex_pass_symbol: 0
+# Limit the users to set a password which is already used in the past
+complex_pass_remember: 0
+# Reintentos
+complex_pass_retry: 3
