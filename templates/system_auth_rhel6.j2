@@ -7,6 +7,7 @@ auth        requisite     pam_succeed_if.so uid >= {{ uid_min }} quiet
 auth        required      pam_deny.so
 
 account     required      pam_unix.so
+account     sufficient    pam_localuser.so
 account     sufficient    pam_succeed_if.so uid < {{ uid_min }} quiet
 account     required      pam_permit.so
 

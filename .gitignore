@@ -1,2 +1,4 @@
 .vagrant*
 .molecule*
+.kitchen/
+.kitchen.local.yml

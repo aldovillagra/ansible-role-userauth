@@ -1,0 +1,8 @@
+- name: Define login definitions for RHEL6
+  template: src=login_defs_rhel6.j2 dest=/etc/login.defs mode=0644
+
+- name: Define system auth definitions for RHEL6
+  template: src=system_auth_rhel6.j2 dest=/etc/pam.d/system-auth-ac mode=0644
+
+- name: Define system password definition for RHEL6
+  template: src=system_auth_rhel6.j2 dest=/etc/pam.d/password-auth-ac mode=0644

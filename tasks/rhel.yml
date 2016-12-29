@@ -1,2 +1,5 @@
 - include: rhel5.yml
   when: ansible_distribution_major_version == "5"
+
+- include: rhel6.yml
+  when: ansible_distribution_major_version == "6"

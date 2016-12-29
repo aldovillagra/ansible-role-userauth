@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: ansible_playbook
+  roles_path: /home/aldoa/ansible/desa/roles
+  hosts: all
+  require_ansible_repo: true
+  ansible_verbose: true
+  ansible_version: latest
+  require_chef_for_busser: false
+
+platforms:
+  - name: centos-6.7
+  - name: centos-7.2
+
+suites:
+  - name: default
+    run_list:
+    attributes:
