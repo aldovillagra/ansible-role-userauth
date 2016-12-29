@@ -9,6 +9,7 @@ pass_min_days: 0
 pass_min_len: 8
 # Number of days warning given before a password expires.
 pass_warn_age: 7
+# Default variable for RHEL5 and RHEL6
 uid_min: 500
 uid_max: 60000
 gid_min: 500
@@ -30,3 +31,12 @@ complex_pass_symbol: 0
 complex_pass_remember: 0
 # Reintentos
 complex_pass_retry: 3
+# Default variable for RHEL76
+uid_min_rhel7: 1000
+uid_max_rhel7: 60000
+sys_uid_min: 201
+sys_uid_max: 999
+gid_min_rhel7: 1000
+gid_max_rhel7: 60000
+sys_gid_min: 201
+sys_gid_max: 999

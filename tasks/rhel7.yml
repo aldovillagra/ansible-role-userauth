@@ -1,0 +1,5 @@
+- name: Define login definitions for RHEL7
+  template: src=login_defs_rhel7.j2 dest=/etc/login.defs mode=0644
+
+- name: Define system password definition for RHEL7
+  template: src=pwquality_conf_rhel7.j2 dest=/etc/security/pwquality.conf mode=0644
