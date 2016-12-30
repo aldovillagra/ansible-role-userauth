@@ -20,15 +20,15 @@ usergroups_enab: "yes"
 md5_crypt_enab: "no"
 encrypt_method: "SHA512"
 # Force Capital Characters In Passwords - ucredit
-complex_pass_capital: 0
+complex_pass_capital: -2
 # Force Lower Case Characters In Passwords - lcredit
-complex_pass_lower: 0
+complex_pass_lower: -2
 # Force Numbers In Passwords - dcredit
-complex_pass_number: 0
+complex_pass_number: -2
 # Force The Use Of Symbols In Passwords - ocredit
-complex_pass_symbol: 0
+complex_pass_symbol: -2
 # Limit the users to set a password which is already used in the past
-complex_pass_remember: 0
+complex_pass_remember: 5
 # Reintentos
 complex_pass_retry: 3
 # Default variable for RHEL76

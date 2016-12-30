@@ -2,3 +2,4 @@
 .molecule*
 .kitchen/
 .kitchen.local.yml
+testpasswd.txt
